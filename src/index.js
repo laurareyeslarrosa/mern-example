@@ -1,4 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './views/comments/commentList';
-ReactDOM.render(<App />, document.getElementById('root'));
+import CommentBox from './views/comments/commentBox';
+
+ReactDOM.render(
+  <CommentBox
+    url='http://localhost:3001/api/comments'
+    pollInterval={2000} />,
+  document.getElementById('root')
+);
