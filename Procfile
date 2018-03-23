@@ -1,3 +1,3 @@
 //Procfile
 web: react-scripts start
-api: nodemon server.js
+api: nodemon server/server.js
